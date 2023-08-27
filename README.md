@@ -17,10 +17,10 @@ composer require peterujah/nano-stamp
 ## Initialize class
 
 ```php
-use NanoBlockTech\Stamp\Circle;
-use NanoBlockTech\Stamp\Square;
-use NanoBlockTech\Stamp\Colors;
-use NanoBlockTech\Stamp\Stamp;
+use Peterujah\NanoBlockTech\Stamp\Circle;
+use Peterujah\NanoBlockTech\Stamp\Square;
+use Peterujah\NanoBlockTech\Stamp\Colors;
+use Peterujah\NanoBlockTech\Stamp\Stamp;
 ```
 
 To draw a square stamp initialize with a square instance 
