@@ -1,5 +1,5 @@
 # Nano Stamp
-Php Class to create a stamp
+Nano Stamp is Php Class to create a custom stamp using the GD Graphics Library. It simplifies the process of generating stamps, such as circular and square designs, accompanied by dynamic text and styling.
 
 
 ## Installation
