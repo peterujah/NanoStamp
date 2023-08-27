@@ -5,13 +5,14 @@ Php Class to create a stamp
 use NanoBlockTech\Stamp\Circle;
 use NanoBlockTech\Stamp\Square;
 use NanoBlockTech\Stamp\Colors;
-use NanoBlockTech\Stamp\Stamp;```
+use NanoBlockTech\Stamp\Stamp;
+```
 
-To drow a square stamp initialize with a square instance 
+To draw a square stamp initialize with a square instance 
 ```php
 $shape = new Stamp(new Square(400, 200));
 ```
-To drow a round stamp initialize with a circle instance 
+To draw a round stamp initialize with a circle instance 
 ```php 
 $shape = new Stamp(new Circle(400, 400));
 ```
