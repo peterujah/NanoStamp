@@ -1,0 +1,38 @@
+{
+    "name": "peterujah/nano-stamp",
+    "type": "library",
+    "description": "Nano Stamp is Php Class to create a custom stamp using the GD Graphics Library. It simplifies the process of generating stamps, such as circular and square designs, accompanied by dynamic text and styling.",
+     "keywords": [
+        "library",
+        "php class",
+        "stamp",
+        "php stamp",
+        "create stamp",
+        "php stamp class",
+        "stamp image"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/peterujah/nano-stamp/",
+    "authors": [
+        {
+            "name": "Ujah Chigozie",
+            "email": "ujahchigozie@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "ext-gd": "*",
+        "ext-mbstring": "*",
+    },
+    "autoload": {
+        "psr-4": { 
+            "Peterujah\\NanoBlockTech\\Stamp\\": "src/"
+        },
+       "exclude-from-classmap": [
+            "test",
+            "font"
+        ],
+    },
+  
+    "prefer-stable": true
+}
