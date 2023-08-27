@@ -1,7 +1,2 @@
 composer.phar
 /vendor/
-
-# Don't include these files and directories when exporting archives
-*.gitattributes export-ignore
-/font export-ignore
-/test export-ignore
