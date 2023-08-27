@@ -1,5 +1,10 @@
 <?php 
-namespace NanoBlockTech\Stamp;
+/**
+ * @author      Peter Chigozie(NG) peterujah
+ * @copyright   Copyright (c), 2023 Peter(NG) peterujah
+ * @license     MIT public license
+ */
+namespace Peterujah\NanoBlockTech\Stamp;
 class Colors {
     public const PINK = [255, 192, 203];
     public const BLUE = [0, 0, 255];
