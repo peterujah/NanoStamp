@@ -27,11 +27,7 @@
     "autoload": {
         "psr-4": { 
             "Peterujah\\NanoBlockTech\\Stamp\\": "src/"
-        },
-       "exclude-from-classmap": [
-            "test",
-            "font"
-        ],
+        }
     },
   
     "prefer-stable": true
