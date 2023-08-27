@@ -1,5 +1,10 @@
 <?php 
-namespace NanoBlockTech\Stamp;
+/**
+ * @author      Peter Chigozie(NG) peterujah
+ * @copyright   Copyright (c), 2023 Peter(NG) peterujah
+ * @license     MIT public license
+ */
+namespace Peterujah\NanoBlockTech\Stamp;
 class Output {
     /** 
     * Hold stamp container gd image container
