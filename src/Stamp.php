@@ -1,10 +1,15 @@
 <?php 
-namespace NanoBlockTech\Stamp;
-use \NanoBlockTech\Stamp\Colors;
-use \NanoBlockTech\Stamp\Circle;
-use \NanoBlockTech\Stamp\Square;
-use \NanoBlockTech\Stamp\Exception\StampException;
-use \NanoBlockTech\Stamp\Exception\StampArgumentException;
+/**
+ * @author      Peter Chigozie(NG) peterujah
+ * @copyright   Copyright (c), 2023 Peter(NG) peterujah
+ * @license     MIT public license
+ */
+namespace Peterujah\NanoBlockTech\Stamp;
+use \Peterujah\NanoBlockTech\Stamp\Colors;
+use \Peterujah\NanoBlockTech\Stamp\Circle;
+use \Peterujah\NanoBlockTech\Stamp\Square;
+use \Peterujah\NanoBlockTech\Stamp\Exception\StampException;
+use \Peterujah\NanoBlockTech\Stamp\Exception\StampArgumentException;
 
 class Stamp {
     /** 
