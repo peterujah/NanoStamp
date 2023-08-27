@@ -9,6 +9,13 @@ Installation is available via Composer:
 composer require peterujah/nano-stamp
 ```
 
+## Example Stamp
+
+<img src="https://raw.githubusercontent.com/peterujah/nano-stamp/main/test/stamp_circle.png" alt="image 1" width="250" /><img src="https://raw.githubusercontent.com/peterujah/nano-stamp/main/test/stamp_circle_vertical.png" alt="image 2" width="250" /><img src="https://raw.githubusercontent.com/peterujah/nano-stamp/main/test/stamp_square.png" alt="image 3" width="250" />
+
+
+## Initialize class
+
 ```php
 use NanoBlockTech\Stamp\Circle;
 use NanoBlockTech\Stamp\Square;
