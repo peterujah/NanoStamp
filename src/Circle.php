@@ -1,10 +1,13 @@
 <?php 
-namespace NanoBlockTech\Stamp;
-require_once __DIR__ . "/StampInterface.php";
-require_once __DIR__ . "/Output.php";
-use \NanoBlockTech\Stamp\StampInterface;
-use \NanoBlockTech\Stamp\Output;
-use \NanoBlockTech\Stamp\Exception\StampException;
+/**
+ * @author      Peter Chigozie(NG) peterujah
+ * @copyright   Copyright (c), 2023 Peter(NG) peterujah
+ * @license     MIT public license
+ */
+namespace Peterujah\NanoBlockTech\Stamp;
+use \Peterujah\NanoBlockTech\Stamp\StampInterface;
+use \Peterujah\NanoBlockTech\Stamp\Output;
+use \Peterujah\NanoBlockTech\Stamp\Exception\StampException;
 class Circle extends Output implements StampInterface {
     /** 
     * Hold stamp gd image container
