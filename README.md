@@ -1,6 +1,14 @@
 # Nano Stamp
 Php Class to create a stamp
 
+
+## Installation
+
+Installation is available via Composer:
+```md
+composer require peterujah/nano-stamp
+```
+
 ```php
 use NanoBlockTech\Stamp\Circle;
 use NanoBlockTech\Stamp\Square;
