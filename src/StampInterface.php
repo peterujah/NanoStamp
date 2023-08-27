@@ -1,5 +1,10 @@
-<?php 
-namespace NanoBlockTech\Stamp;
+<?php
+/**
+ * @author      Peter Chigozie(NG) peterujah
+ * @copyright   Copyright (c), 2023 Peter(NG) peterujah
+ * @license     MIT public license
+ */
+namespace Peterujah\NanoBlockTech\Stamp;
 interface StampInterface {
     /** 
     * Set font path
