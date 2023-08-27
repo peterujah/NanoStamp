@@ -28,7 +28,7 @@ class Stamp {
     * Hold stamp class version
     * @var string static::VERSION
     */
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.0.2';
     
 
     /** 
