@@ -16,6 +16,12 @@ class Circle extends Output implements StampInterface {
     private $image;
 
     /** 
+    * Hold stamp center image
+    * @var resource $overlayImage
+    */
+    private $overlayImage;
+
+    /** 
     * Hold stamp font path
     * @var string $fontPath
     */
@@ -101,6 +107,15 @@ class Circle extends Output implements StampInterface {
         }
         imagefill($this->image, 0, 0, $backgroundColor);
     }
+
+    /** 
+    * Set stamp container background image color
+    * @param array $color RGBA
+    */
+    public function setBackgroundImage(string $filePath) {
+        
+    }
+    
     
     /** 
     * Draw stamp circle container border
@@ -209,6 +224,44 @@ class Circle extends Output implements StampInterface {
     
         imagefttext($this->image, $options["fontSize"], 0, $startX, $startY, $textColor, $this->fontPath, $text);
     }
+
+    /** 
+    * Draw stamp center image
+    * @param string $filePath
+    * @param array $options
+    */
+    public function drawCenterImage($filePath, $options) {
+        if (!file_exists($filePath)) {
+            throw new StampException("Image file path does not exist.");
+        }
+        $this->overlayImage = imagecreatefrompng($filePath);
+        if ($this->overlayImage === false) {
+            throw new StampException("Failed to create image from the specified file: {$filePath}.");
+        }
+        $centerX = $this->width / 2;
+        $centerY = $this->height / 2;
+
+        $positionTop = $options["top"] ?? 0;
+        $positionLeft = $options["left"] ?? 0;
+        $overlayWidth = $options["width"] ?? 50;
+        $overlayHeight = $options["height"] ?? 50;
+
+        $positionX = $centerX - ($overlayWidth / 2) + $positionLeft;
+        $positionY = $centerY - ($overlayHeight / 2) + $positionTop;
+
+        imagecopyresampled(
+            $this->image,
+            $this->overlayImage,
+            $positionX,
+            $positionY,
+            0,
+            0,
+            $overlayWidth,
+            $overlayHeight,
+            imagesx($this->overlayImage),
+            imagesy($this->overlayImage)
+        );
+    }
     
 
     /** 
@@ -216,5 +269,6 @@ class Circle extends Output implements StampInterface {
     */
     public function __destruct() {
         imagedestroy($this->image);
+        imagedestroy($this->overlayImage);
     }
 }
