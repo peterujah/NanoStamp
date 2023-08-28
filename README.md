@@ -134,3 +134,16 @@ Flag `D = Download, S = Save, I = Display `
 ```php
 $stamp->create('stamp_image.png', "S");
 ```
+
+### More Methods 
+
+To add an image overlay 
+
+```php
+$stamp->drawCenterImage(__DIR__ . "/company-logo.png", [
+    "top" => 0,
+    "left" => 0,
+    "width" => 50,
+    "height" => 50
+]);
+```
