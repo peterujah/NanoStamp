@@ -24,6 +24,12 @@ interface StampInterface {
     */
     public function setBackgroundColor(array $backgroundColor);
 
+     /** 
+    * Set stamp background image
+    * @var string $filePath
+    */
+    public function setBackgroundImage(string $filePath);
+
     /** 
     * Set stamp gd image container
     * @var resource $image
@@ -48,6 +54,13 @@ interface StampInterface {
     * @var array $options
     */
     public function drawCenterText(string $text, array $options); 
+
+    /** 
+    * Draw stamp center image
+    * @var string $filePath
+    * @var array $options
+    */
+    public function drawCenterImage(string $filePath, array $options); 
 
     /** 
     * Set stamp version
